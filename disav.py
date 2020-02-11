@@ -59,7 +59,7 @@ MAGIC_TAG = {
     # Python 3.3
     3190: (3, 3),  # a0
     3200: (3, 3),  # a0
-	3210: (3, 3),  # a1
+    3210: (3, 3),  # a1
     3220: (3, 3),  # a1
     3230: (3, 3),  # a4
 
@@ -99,20 +99,20 @@ MAGIC_TAG = {
     3393: (3, 7),  # b1
     3394: (3, 7),  # b5
 
-	# Python 3.8
-	3400: (3, 8),  # a1
-	3401: (3, 8),  # a1
-	3411: (3, 8),  # b2
-	3412: (3, 8),  # b2
-	3413: (3, 8),  # b4
+    # Python 3.8
+    3400: (3, 8),  # a1
+    3401: (3, 8),  # a1
+    3411: (3, 8),  # b2
+    3412: (3, 8),  # b2
+    3413: (3, 8),  # b4
 
-	# Python 3.9
-	3420: (3, 9),  # a0
-	3421: (3, 9),  # a0
-	3422: (3, 9),  # a0
-	3423: (3, 9),  # a2
-	3424: (3, 9),  # a2
-	3425: (3, 9),  # a2
+    # Python 3.9
+    3420: (3, 9),  # a0
+    3421: (3, 9),  # a0
+    3422: (3, 9),  # a0
+    3423: (3, 9),  # a2
+    3424: (3, 9),  # a2
+    3425: (3, 9),  # a2
 }
 
 def magic_to_version(magic):
@@ -120,7 +120,7 @@ def magic_to_version(magic):
     return MAGIC_TAG[magic_decimal]
 
 def bytes_to_dec(b):
-	return struct.unpack('<L', b)[0] # little-endian
+    return struct.unpack('<L', b)[0] # little-endian
 
 def show_hex(label, h, indent):
     h = h.hex()

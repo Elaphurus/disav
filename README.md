@@ -66,7 +66,7 @@ If the lowest bit of the bit field is set, the pyc is a __hash-based pyc__. We c
 - 8B hash of the source file
 - Marshalled code object
 
-![](./fig/4-0.png)
+![](./doc/fig/4-0.png)
 
 __bytes to long__
 
